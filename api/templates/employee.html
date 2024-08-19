@@ -1,0 +1,32 @@
+{% extends 'layouts/main.html' %}
+
+{% block title %}Employees{% endblock %}
+
+{% block content %}
+<h1>Employees</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Employee Name</th>
+      <th scope="col">Position</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>John Doe</td>
+      <td>Manager</td>
+      <td><button class="btn btn-primary">Edit</button></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jane Smith</td>
+      <td>Developer</td>
+      <td><button class="btn btn-primary">Edit</button></td>
+    </tr>
+    <!-- Add more rows as needed -->
+  </tbody>
+</table>
+{% endblock %}

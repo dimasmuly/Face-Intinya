@@ -1,0 +1,394 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+  <div class="right-col">
+    <h1>Introduction</h1>
+    <p>
+      Aplikasi ini adalah aplikasi yang digunakan untuk melakukan pengenalan wajah. Aplikasi ini dibangun dengan Flask, OpenCV, dan Face Recognition Library serta ada yang menggunakan Desktop atau Tkinter. Aplikasi ini dapat digunakan untuk melakukan pengenalan wajah pada gambar atau video. Aplikasi ini juga dapat digunakan untuk melakukan pengenalan wajah secara real-time melalui kamera. dan aplikasi ini akan diimplemetasikan untuk kebutuhan perusahaan sebagai mendeteksi wajah karyawan yang masuk dan keluar dari perusahaan serta mendeteksi wajah customer yang masuk ke outlet dan nantinya akan dianaalisis untuk kebutuhan marketing.
+    </p>
+
+    <h2>Supported Versions:</h2>
+    <p>
+      <b>App Version 1.0.0.</b>
+      Ini masih versi awal dari aplikasi ini. Aplikasi ini masih dalam tahap pengembangan dan akan terus diperbarui. 
+    </p>
+
+    <h2>About this App</h2>
+    <p id="technology"> 
+      Aplikasi ini dibangun dengan OpenCV, Face Recognition Library, Flask, dan Tkinter. <br/>
+      Selain itu aplikasi ini juga menggunakan HTML, CSS, dan Javascript untuk tampilan webnya. tapi untuk tampilan desktop menggunakan Tkinter. Dan lebih condong ke desktop app.
+    </p>
+
+    <h2>Technology</h2>
+    <span>
+      Aplikasi ini dibangun dengan menggunakan beberapa teknologi berikut:
+      <ul>
+        <li><b>OpenCV:</b> OpenCV adalah library open-source yang digunakan untuk pengolahan citra dan video.</li>
+        <li><b>Face Recognition Library:</b> Face Recognition Library adalah library open-source yang digunakan untuk melakukan pengenalan wajah.</li>
+        <li><b>Flask:</b> Flask adalah web framework yang digunakan untuk membuat aplikasi web.</li>
+        <li><b>Tkinter:</b> Tkinter adalah library yang digunakan untuk membuat aplikasi desktop.</li>
+        <li><b>HTML, CSS, Javascript:</b> HTML, CSS, dan Javascript digunakan untuk membuat tampilan web aplikasi.</li>
+        <li><b>Sklearn:</b> Sklearn digunakan untuk melakukan training model.</li>
+        <li><b>Tensorflow:</b> Tensorflow digunakan untuk melakukan training model.</li>
+        <li><b>Keras:</b> Keras digunakan untuk melakukan training model.</li>
+      </ul>
+    </span>
+
+    <p id="consept">
+      <b>Conseptual:</b> Konsep aplikasi akan dijelaskan disini.
+    </p>
+
+    <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+    <h1>Conseptual</h1>
+
+    <h2>Kenapa harus ada konsep aplikasi?</h2>
+
+    <p>
+      Konsep aplikasi sangat penting untuk memahami bagaimana aplikasi ini bekerja. Dan kenapa aplikasi ini dibuat karena kebutuhan perusahaan yang ingin melakukan pengenalan wajah karyawan yang masuk dan keluar dari perusahaan serta mendeteksi wajah customer yang masuk ke outlet dan nantinya akan dianaalisis untuk kebutuhan marketing. Tanpa adanya konsep yang jelas, aplikasi ini tidak akan berjalan dengan baik.
+    </p>
+    <p id="diagrams"><b>Important:</b> Setelah baris ini adalah informasi penting.</p>
+
+
+    <h2>Diagrams</h2>
+
+    <p>
+      Disini akan dijelaskan tentang diagram dari aplikasi ini. Diagram ini akan membantu untuk memahami bagaimana aplikasi ini bekerja. Berikut adalah diagram dari aplikasi ini download file diagram <a href="{{ url_for('static', filename='files/face_recognition.drawio') }}">disini</a>:
+    </p>
+
+    <ol>
+      <li>
+        Diagram Alur Kerja Mendeteksi Customer (Gender, Age, Expression) <br>
+        <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="" srcset="" class="w-100">
+      </li>
+      <br>
+      <li>
+        Diagram Alur Kerja Mendeteksi Karyawan (Face Recognition, in or out) <br>
+        <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="" srcset="" class="w-100">
+      </li>
+      <br id="lifecycle">
+      <li>
+        Diagram Alur Kerja Aplikasi <br>
+        <img src="{{ url_for('static', filename='images/3.jpg') }}" alt="" srcset="" class="w-100">
+      </li>
+      <br>
+      <li>
+        Diagram Alur Kerja Aplikasi (Desktop, Running) <br>
+        <img src="{{ url_for('static', filename='images/4.jpg') }}" alt="" srcset="" class="w-100">
+      </li>
+      <br>
+      <li>
+        Contoh Tampilan Desktop <br>
+        <img src="{{ url_for('static', filename='images/5.jpg') }}" alt="" srcset="" style="width: 50%;">
+      </li>
+      <br>
+      <li>
+        Contoh Tampilan Desktop <br>
+        <img src="{{ url_for('static', filename='images/6.jpg') }}" alt="" srcset="" style="width: 50%;">
+      </li>
+      <br>
+    </ol>
+
+    <p id="gettingstarted">
+      <b>Getting Started:</b> Untuk memulai menggunakan aplikasi ini, ikuti langkah-langkah berikut:
+    </p>
+
+    <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+    <h1>Getting Started</h1>
+
+    <h2>Silahkan dibaca dengan seksama!</h2>
+
+    <p>
+      Sebelum menggunakan aplikasi ini, pastikan anda sudah membaca dokumentasi ini dengan seksama. Jika anda sudah membaca dokumentasi ini, anda siap untuk menggunakan aplikasi ini. Berikut adalah langkah-langkah untuk menggunakan aplikasi ini:
+    </p>
+
+    <p id="installingapp"><b>Important:</b> Setelah baris ini adalah informasi penting.
+    </p>
+
+
+    <h2>Install the App</h2>
+
+    <p>
+      <small style="color: red;">Pastikan anda sudah menginstall Python versi 3.9 atau lebih baru.</small> <br>
+      Install aplikasi ini dengan mengikuti langkah-langkah berikut:
+    </p>
+
+    <h4>First Setup</h4>
+    <ol>
+      <li>
+        Clone the repository: 
+        <pre><code id="git-command">git clone https://github.com/hoyirul/face-recognition-models.git</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+      <li>
+        Membuat virtual environment:
+        <pre><code>python3 -m venv venv</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+      <li>
+        Install requirements:
+        <pre><code>pip3 install -r requirements.txt</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+    </ol>
+
+    <h4>Download Setup</h4>
+    <ol>
+      <li>
+        Download the dataset Original Images: 
+        <pre><code id="git-command">https://www.kaggle.com/datasets/vasukipatel/face-recognition-dataset?select=Original+Images</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+      <li>
+        Setelah anda mendownload dataset, silahkan ekstrak dataset tersebut dan ganti nama folder <code>Original Images</code> menjadi <code>"original_images"</code>
+      </li>
+      <br>
+      <li>
+        Download the dataset UTK Face: 
+        <pre><code id="git-command">https://www.kaggle.com/datasets/jangedoo/utkface-new</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+      <li>
+        Setelah anda mendownload dataset, silahkan ekstrak dataset tersebut dan ganti nama folder menjadi <code>"gender_age"</code>
+      </li>
+      <br>
+      <li>
+        Download the dataset Face Expression: 
+        <pre><code id="git-command">https://www.kaggle.com/datasets/jonathanoheix/face-expression-recognition-dataset</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+      <li>
+        Setelah anda mendownload dataset, silahkan ekstrak dataset tersebut dan ganti nama folder menjadi <code>"expressions"</code> lalu ganti nama folder <code>"validation"</code> menjadi <code>"test"</code>
+      </li>
+      <br>
+    </ol>
+
+    <h2 id="openingapp">Opening the app</h2>
+
+    <p>
+      Setelah anda menginstall aplikasi ini, anda siap untuk membuka aplikasi ini. Pastikan anda sudah menjalankan file <code>.ipynb</code> file untuk membuat models. Jika anda sudah menjalankan file tersebut, anda siap untuk membuka aplikasi ini. Berikut adalah langkah-langkah untuk membuka aplikasi ini:
+    </p>
+
+    <h4>Desktop App</h4>
+    <ol>
+      <li>
+        Sebelum menjalankan aplikasi, diharapkan anda menjalankan perintah berikut:
+        <pre><code>python3 desktops/db/sqlite.py</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+      <li>
+        Lalu jalankan perintah: 
+        <pre><code id="git-command">python3 desktops\test-customers.py</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+        <pre><code id="git-command">python3 desktops\test-customers-counter.py</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+        <pre><code id="git-command">python3 desktops\test-customers-counter-sqlite.py</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+    </ol>
+
+    <h4>Website App</h4>
+    <ol>
+      <li>
+        untuk menjalankan aplikasi, jalankan perintah: 
+        <pre><code id="git-command">python3 sites\test-customers.py</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+        <pre><code id="git-command">python3 sites\test-customers-counter.py</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+        <pre><code id="git-command">python3 sites\test-customers-counter-sqlite.py</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+    </ol>
+
+    <h2 id="buildingapp">Building the app</h2>
+
+    <p>
+      Setelah anda membuka aplikasi ini, anda siap untuk menggunakan aplikasi ini. Berikut adalah langkah-langkah untuk membuat exeuatable file dari aplikasi ini, dan pastikan sudah menginstall <a href="https://jrsoftware.org/isdl.php">Inno Setup Compiler (US)</a>:
+    </p>
+
+    <h4>Setup Project</h4>
+    <ol>
+      <li>
+        Berikut adalah contoh struktur folder project, tapi bisa di sesuaikan dengan kebutuhan:
+        <pre><code>
+          your-project
+          ├── employees
+          │   ├── image1.jpg
+          │   ├── image2.jpg
+          │   └── image3.jpg
+          ├── face_recognition_models
+          │   ├── models
+          │   │   ├── dlib_face_recognition_resnet_model_v1.dat
+          │   │   ├── mmod_human_face_detector.dat
+          │   │   ├── shape_predictor_5_face_landmarks.dat
+          │   │   └── shape_predictor_68_face_landmarks.dat
+          ├── json
+          │   ├── employee-counter.json
+          │   └── employees.json
+          ├── main.py
+          └── requirements.txt
+        </code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+      <li>
+        Lalu jalankan perintah dibawah untuk memastikan aplikasi berjalan dengan baik: 
+        <pre><code id="git-command">python3 main.py</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+      <li>
+        Setelah aplikasi berjalan dengan baik, jalankan perintah berikut untuk membuat executable file:
+        <pre><code>pyinstaller --noconsole --add-data "employees;employees" --add-data "json;json" --add-data "face_recognition_models;face_recognition_models" --specpath . main.py</code>
+        <button class="copy-button" onclick="copyToClipboard(this)">Copy</button></pre>
+      </li>
+      <li>
+        Setelah perintah diatas dijalankan, maka akan terbuat folder <code>dist</code> dan <code>build</code>. Lalu buka folder <code>dist/main/</code> dan jalankan file <code>main.exe</code>
+      </li>
+      <li>
+        Jika aplikasi berjalan dengan baik, maka anda siap untuk membuat installer dari aplikasi ini dengan menggunakan <a href="https://jrsoftware.org/isdl.php">Inno Setup Compiler (US)</a>
+      </li>
+      <li>
+        Berikut adalah tutorial membuat installer dengan menggunakan Inno Setup Compiler (US):
+        <a href="https://drive.google.com/file/d/1CDLCb-82Ro_guHqt9YWxz2JXCmmvHFlw/view?usp=sharing" target="_blank">Tutorial Inno Setup Compiler (US)</a>
+      </li>
+    </ol>
+
+    <p id="basicfeatures">
+      <b>Basic Features:</b> Berikut adalah fitur-fitur dasar dari aplikasi ini.
+    </p>
+
+
+    <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+
+    <h1>Basic Features</h1>
+
+    <h2>Face Reconition</h2>
+
+    <p id="basicfeatures">
+      Aplikasi ini dapat digunakan untuk melakukan pengenalan wajah pada gambar atau video. Aplikasi ini juga dapat digunakan untuk melakukan pengenalan wajah secara real-time melalui kamera. dan aplikasi ini akan diimplemetasikan untuk kebutuhan perusahaan sebagai mendeteksi wajah karyawan yang masuk dan keluar dari perusahaan serta mendeteksi wajah customer yang masuk ke outlet dan nantinya akan dianaalisis untuk kebutuhan marketing.
+    </p>
+    <ol>
+      <li>
+        The first thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        The second thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        The third thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        Use the feature and start recognizing faces!
+      </li>
+      <br>
+    </ol>
+
+    <h2>Age Detection</h2>
+
+    <p>
+      Aplikasi ini dapat digunakan untuk mendeteksi usia seseorang. Aplikasi ini akan mendeteksi usia seseorang berdasarkan wajahnya. Aplikasi ini akan menampilkan usia seseorang pada gambar atau video. Aplikasi ini juga dapat digunakan untuk mendeteksi usia seseorang secara real-time melalui kamera.
+    </p>
+    <ol>
+      <li>
+        The first thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        The second thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        The third thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        Use the feature and start detecting ages!
+      </li>
+      <br id="feature3">
+    </ol>
+
+    <h2>Gender Detection</h2>
+
+    <p>
+      Aplikasi ini dapat digunakan untuk mendeteksi jenis kelamin seseorang. Aplikasi ini akan mendeteksi jenis kelamin seseorang berdasarkan wajahnya. Aplikasi ini akan menampilkan jenis kelamin seseorang pada gambar atau video. Aplikasi ini juga dapat digunakan untuk mendeteksi jenis kelamin seseorang secara real-time melalui kamera.
+    </p>
+    <ol>
+      <li>
+        The first thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        The second thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        The third thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        Use the feature and start detecting
+      </li>
+      <br id="feature4">
+    </ol>
+
+    <h2>Facial Expression</h2>
+
+    <p>
+      Aplikasi ini dapat digunakan untuk mendeteksi ekspresi wajah seseorang. Aplikasi ini akan mendeteksi ekspresi wajah seseorang berdasarkan wajahnya. Aplikasi ini akan menampilkan ekspresi wajah seseorang pada gambar atau video. Aplikasi ini juga dapat digunakan untuk mendeteksi ekspresi wajah seseorang secara real-time melalui kamera.
+    </p>
+    <ol>
+      <li>
+        The first thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        The second thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        The third thing you need to do to use this feature.
+      </li>
+      <br>
+      <li>
+        Use the feature and start detecting
+      </li>
+      <br id="advanced">
+    </ol>
+
+    <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+    <h1>Advanced Features</h1>
+    <a href="https://drive.google.com/file/d/1VBl2_zeLV7j4D4he4Jaeho_d1GpI75tA/view?usp=sharing" target="_blank">Link Video</a>
+
+    <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+    <h1 id="accesibility">Accessibility</h1>
+    <p>
+      Aplikasi ini dapat diakses oleh semua orang. Aplikasi ini dirancang untuk mudah digunakan oleh semua orang. Aplikasi ini juga dapat diakses melalui perangkat apa pun, baik itu desktop, laptop, tablet, atau ponsel. Aplikasi ini juga dapat diakses oleh orang-orang dengan disabilitas. Aplikasi ini dirancang untuk memenuhi standar aksesibilitas web.
+    </p>
+
+    <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+    <h1 id="moreinfo">More Info</h1>
+    <p>
+      Aplikasi Face Recognition ini dirancang untuk mengenali wajah pengguna secara real-time melalui kamera. 
+      Dengan menggunakan teknologi pembelajaran mesin dan model pra-latih, aplikasi ini dapat mendeteksi wajah, 
+      menentukan jenis kelamin, perkiraan usia, dan ekspresi wajah. Data pelanggan yang sudah dikenal akan disimpan 
+      dan digunakan untuk mengenali pengunjung yang berulang.
+    </p>
+
+    <h2>References</h2>
+    <ol>
+      <li><a href="https://www.kaggle.com/datasets/vasukipatel/face-recognition-dataset?select=Original+Images">Original Images</a></li>
+      <li><a href="https://www.kaggle.com/datasets/jangedoo/utkface-new">UTK Face</a></li>
+      <li><a href="https://www.kaggle.com/datasets/jonathanoheix/face-expression-recognition-dataset">Face Expression</a></li>
+    </ol>
+
+    <div class="doublespace"></div>
+    <div class="divider" style="width:24%; margin:30px 0;"></div>
+  </div>
+{% endblock %}

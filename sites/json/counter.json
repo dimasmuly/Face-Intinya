@@ -1,0 +1,67 @@
+[
+  {
+    "ID": "FBB33C4NJ7",
+    "expression": "Neutral",
+    "time": "2024-07-19T15:20:56.625040"
+  },
+  {
+    "ID": "751D6ZNDOZ",
+    "expression": "Neutral",
+    "time": "2024-07-19T15:23:50.462301"
+  },
+  {
+    "ID": "751D6ZNDOZ",
+    "expression": "Neutral",
+    "time": "2024-07-19T15:24:26.678111"
+  },
+  {
+    "ID": "J9AAU5YYV1",
+    "expression": "Neutral",
+    "time": "2024-07-19T15:24:52.176741"
+  },
+  {
+    "ID": "J9AAU5YYV1",
+    "expression": "Sad",
+    "time": "2024-07-19T15:25:00.324131"
+  },
+  {
+    "ID": "6TTQQ5K1BF",
+    "expression": "Happy",
+    "time": "2024-07-19T15:25:03.960880"
+  },
+  {
+    "ID": "J9AAU5YYV1",
+    "expression": "Neutral",
+    "time": "2024-07-19T15:25:12.514616"
+  },
+  {
+    "ID": "J9AAU5YYV1",
+    "expression": "Neutral",
+    "time": "2024-07-19T15:25:36.814703"
+  },
+  {
+    "ID": "6TTQQ5K1BF",
+    "expression": "Happy",
+    "time": "2024-07-19T15:25:51.122161"
+  },
+  {
+    "ID": "751D6ZNDOZ",
+    "expression": "Neutral",
+    "time": "2024-07-19T15:28:42.707986"
+  },
+  {
+    "ID": "751D6ZNDOZ",
+    "expression": "Neutral",
+    "time": "2024-07-19T15:28:54.770936"
+  },
+  {
+    "ID": "751D6ZNDOZ",
+    "expression": "Angry",
+    "time": "2024-07-19T15:28:55.989788"
+  },
+  {
+    "ID": "751D6ZNDOZ",
+    "expression": "Happy",
+    "time": "2024-07-19T15:29:03.444394"
+  }
+]

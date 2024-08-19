@@ -1,0 +1,32 @@
+{% extends 'layouts/main.html' %}
+
+{% block title %}Devices{% endblock %}
+
+{% block content %}
+<h1>Devices</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Device Name</th>
+      <th scope="col">Status</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Device 1</td>
+      <td>Active</td>
+      <td><button class="btn btn-primary">Edit</button></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Device 2</td>
+      <td>Inactive</td>
+      <td><button class="btn btn-primary">Edit</button></td>
+    </tr>
+    <!-- Add more rows as needed -->
+  </tbody>
+</table>
+{% endblock %}

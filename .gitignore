@@ -1,0 +1,15 @@
+venv/
+original_images/
+gender_age/
+expressions/
+models/age_model.h5
+models/gen_model.h5
+models/model-50epoch.h5
+models/model-30epoch-datasets.h5
+yolov7/
+yolov7/yolov7.pt
+build/
+dist/
+face_recognition_models/
+.mp4
+

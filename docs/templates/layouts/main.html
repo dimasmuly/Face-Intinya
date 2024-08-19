@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation INTI NYA GROUP</title>
+  <meta name="description" content="A simple HTML/CSS Documentations INTI NYA GROUP">
+  <meta name="author" content="Mochammad Hairullah">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap"
+    rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+    integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+  {% include 'partials/navbar.html'   %}
+  <div class="container clear">
+    <div class="row wrapper">
+
+      {% include 'partials/sidebar.html'   %}
+
+      {% block content %}
+        
+      {% endblock %}o
+    </div>
+  </div>
+  <script>
+    function copyToClipboard(button) {
+      const codeElement = document.getElementById('git-command');
+      const textArea = document.createElement('textarea');
+      textArea.value = codeElement.textContent;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      
+      button.textContent = 'Copied';
+      setTimeout(() => {
+        button.textContent = 'Copy';
+      }, 2000); // Change back to 'Copy' after 2 seconds
+    }
+  </script>
+</body>
+</html>
